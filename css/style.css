@@ -13,11 +13,7 @@ body {
 }
 
 h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h2 {
   color: var(--primary-color);
   font-family: var(--primary-font);
 }
@@ -25,12 +21,13 @@ h6 {
 .hero {
   background-color: var(--background-color);
   text-align: center;
-  padding: 100px 20px;
+  padding: 220px 20px;
 }
 
-.hero p {
+.heading-paragraph {
   font-size: 30px;
   font-weight: 700;
+  text-align: center;
 }
 
 .hero h1 {
@@ -45,13 +42,64 @@ h6 {
   font-weight: 400;
 }
 
-.hero a {
+.btn-own-link,
+.btn-own-launch {
   background-color: var(--secondary-color);
   color: var(--background-color);
-  text-decoration: none;
   text-transform: uppercase;
   font-size: 12px;
-  padding: 18px 30px;
   border-radius: 50px;
+}
+
+.btn-own-link {
+  padding: 15px 30px;
   margin: 10px;
+}
+
+.btn-own-launch {
+  padding: 15px;
+}
+
+.btn-own-link:hover,
+.btn-own-launch:hover {
+  color: var(--background-color);
+  background-color: var(--primary-color);
+}
+
+h2 {
+  font-weight: 700;
+}
+
+img {
+  width: 75%;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 992px) {
+  .hero {
+    padding: 20px;
+  }
+
+  .hero h1 {
+    font-size: 46px;
+  }
+
+  .heading-paragraph {
+    font-size: 20px;
+  }
+
+  .hero h2 {
+    font-size: 16px;
+  }
+
+  .project-description {
+    text-align: center;
+  }
+
+  .homepage-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }

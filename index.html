@@ -13,12 +13,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-    href="https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,300..800;1,300..800&display=swap"
-    rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
     />
     <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
     />
     <link rel="stylesheet" href="/css/style.css" />
     <script
@@ -33,14 +33,97 @@
   </head>
   <body>
     <div class="hero">
-      <p>G'day, I am</p>
+      <p class="heading-paragraph">G'day, I am</p>
       <h1>Dana Caletkova</h1>
       <h2 class="p-2">front-end developer based in Perth, WA</h2>
-      <div class="links p-5">
-        <a href="#">About me</a>
-        <a href="#">My work</a>
-        <a href="#">Contact me</a>
+      <div class="homepage-links">
+        <a href="#" class="btn btn-own-link">About me</a>
+        <a href="/#project-list" class="btn btn-own-link">My work</a>
+        <a href="#" class="btn btn-own-link">Contact me</a>
       </div>
     </div>
+    <main>
+      <p class="heading-paragraph m-3" id="project-list">
+        Here are some projects I have worked on
+      </p>
+      <div class="container">
+        <div class="row align-items-center my-5">
+          <div class="col d-none d-lg-block">
+            <img
+              src="images/bre-ezy.png"
+              alt="weather forecast app preview"
+              class="img-fluid rounded"
+            />
+          </div>
+          <div class="col project-description">
+            <h2>Weather forecast</h2>
+            <p class="my-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <a href="#" class="btn btn-own-launch">Launch weather forecast</a>
+          </div>
+        </div>
+        <div class="row align-items-center my-5">
+          <div class="col project-description">
+            <h2>World Clock</h2>
+            <p class="my-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <a href="#" class="btn btn-own-launch">Launch world clock</a>
+          </div>
+          <div class="col d-none d-lg-block">
+            <img
+              src="images/world-o-clock.png"
+              alt="world clock app preview"
+              class="img-fluid rounded"
+            />
+          </div>
+        </div>
+        <div class="row align-items-center my-5">
+          <div class="col d-none d-lg-block">
+            <img
+              src="images/fun-fact-generator.png"
+              alt="fun fact generator app preview"
+              class="img-fluid rounded"
+            />
+          </div>
+          <div class="col project-description">
+            <h2>Fun fact generator</h2>
+            <p class="my-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <a href="#" class="btn btn-own-launch">Launch fun fact generator</a>
+          </div>
+        </div>
+        <div class="row align-items-center my-5">
+          <div class="col project-description">
+            <h2>Wedding page</h2>
+            <p class="my-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <a href="#" class="btn btn-own-launch">Coming soon</a>
+          </div>
+          <div class="col d-none d-lg-block">
+            <img
+              src="images/wedding.png"
+              alt="world clock app preview"
+              class="img-fluid rounded"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
