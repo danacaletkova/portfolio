@@ -1,15 +1,16 @@
 :root {
-  --primary-color: #8e38ad;
-  --secondary-color: #000;
-  --background-color: #fff;
-  --primary-font: "Faustina", serif;
-  --secondary-font: "Montserrat", sans-serif;
+  --primary-color: #dd3b24;
+  --secondary-color: #333333;
+  --secondary-color-light: #929292;
+  --background-color: #f8f8f8;
+  --primary-font: "DM Serif Display", serif;
+  --secondary-font: "DM Sans", sans-serif;
 }
 
 body {
   font-family: var(--secondary-font);
   color: var(--secondary-color);
-  min-width: fit-content;
+  background-color: var(--background-color);
 }
 
 h1,
@@ -19,9 +20,8 @@ h2 {
 }
 
 .hero {
-  background-color: var(--background-color);
   text-align: center;
-  padding: 220px 20px;
+  padding: 240px 20px;
 }
 
 .heading-paragraph {
@@ -31,7 +31,7 @@ h2 {
 }
 
 .hero h1 {
-  font-size: 96px;
+  font-size: 104px;
   font-weight: 700;
 }
 
@@ -44,11 +44,11 @@ h2 {
 
 .btn-own-link,
 .btn-own-launch {
-  background-color: var(--secondary-color);
-  color: var(--background-color);
-  text-transform: uppercase;
   font-size: 12px;
-  border-radius: 50px;
+  text-transform: uppercase;
+  color: var(--secondary-color);
+  background-color: var(--background-color);
+  box-shadow: rgba(51, 51, 51, 0.15) 0px 3px 3px 0px;
 }
 
 .btn-own-link {
@@ -66,7 +66,8 @@ h2 {
   background-color: var(--primary-color);
 }
 
-h2 {
+main h2 {
+  font-size: 36px;
   font-weight: 700;
 }
 
@@ -76,13 +77,18 @@ img {
   margin: 0 auto;
 }
 
-@media (max-width: 992px) {
+.end-page-link {
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 576px) {
   .hero {
-    padding: 20px;
+    padding: 70px;
   }
 
   .hero h1 {
-    font-size: 46px;
+    font-size: 52px;
   }
 
   .heading-paragraph {
@@ -98,8 +104,10 @@ img {
   }
 
   .homepage-links {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: none;
+  }
+
+  .btn-own-launch {
+    display: block;
   }
 }
