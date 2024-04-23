@@ -19,15 +19,13 @@ h2 {
   font-family: var(--primary-font);
 }
 
+h3 {
+  font-size: 30px;
+}
+
 .hero {
   text-align: center;
   padding: 240px 20px;
-}
-
-.heading-paragraph {
-  font-size: 30px;
-  font-weight: 700;
-  text-align: center;
 }
 
 .hero h1 {
@@ -40,6 +38,21 @@ h2 {
   font-family: var(--secondary-font);
   font-size: 24px;
   font-weight: 400;
+}
+
+.about-hero {
+  padding: 120px 0;
+}
+
+.about-hero h1 {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.about-hero h2 {
+  color: var(--secondary-color);
+  font-family: var(--primary-font);
+  font-size: 24px;
 }
 
 .btn-own-link,
@@ -71,16 +84,11 @@ main h2 {
   font-weight: 700;
 }
 
-img {
+/* img {
   width: 75%;
   display: block;
   margin: 0 auto;
-}
-
-.end-page-link {
-  display: block;
-  margin: 0 auto;
-}
+} */
 
 @media (max-width: 576px) {
   .hero {
@@ -91,12 +99,12 @@ img {
     font-size: 52px;
   }
 
-  .heading-paragraph {
-    font-size: 20px;
-  }
-
   .hero h2 {
     font-size: 16px;
+  }
+
+  h3 {
+    font-size: 20px;
   }
 
   .project-description {
@@ -109,5 +117,12 @@ img {
 
   .btn-own-launch {
     display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-hero {
+    text-align: center;
+    padding: 40px 0;
   }
 }
