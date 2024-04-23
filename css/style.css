@@ -84,6 +84,12 @@ main h2 {
   font-weight: 700;
 }
 
+.profile-picture {
+  width: 75%;
+  display: block;
+  margin: 0 auto;
+}
+
 .card-title {
   font-family: var(--primary-font);
 }
@@ -128,5 +134,9 @@ main h2 {
   .content-section {
     text-align: center;
     padding: 40px 0;
+  }
+
+  .profile-picture {
+    max-width: 50%;
   }
 }
