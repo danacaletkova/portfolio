@@ -13,6 +13,17 @@ body {
   background-color: var(--background-color);
 }
 
+.underline {
+  font-family: var(--primary-font);
+  color: var(--secondary-color);
+  text-transform: lowercase;
+  text-decoration: underline var(--primary-color) 6px;
+  text-decoration-skip-ink: none;
+  text-underline-offset: 8px;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
 h1,
 h2 {
   color: var(--primary-color);
@@ -55,30 +66,6 @@ h3 {
   font-size: 22px;
 }
 
-.btn-own-link,
-.btn-own-launch {
-  font-size: 12px;
-  text-transform: uppercase;
-  color: var(--secondary-color);
-  background-color: var(--background-color);
-  box-shadow: rgba(51, 51, 51, 0.15) 0px 3px 3px 0px;
-}
-
-.btn-own-link {
-  padding: 15px 30px;
-  margin: 10px;
-}
-
-.btn-own-launch {
-  padding: 15px;
-}
-
-.btn-own-link:hover,
-.btn-own-launch:hover {
-  color: var(--background-color);
-  background-color: var(--primary-color);
-}
-
 main h2 {
   font-size: 36px;
   font-weight: 700;
@@ -93,12 +80,6 @@ main h2 {
 .card-title {
   font-family: var(--primary-font);
 }
-
-/* img {
-  width: 75%;
-  display: block;
-  margin: 0 auto;
-} */
 
 @media (max-width: 576px) {
   .hero {
@@ -119,10 +100,6 @@ main h2 {
 
   .project-description {
     text-align: center;
-  }
-
-  .homepage-links {
-    display: none;
   }
 
   .btn-own-launch {
