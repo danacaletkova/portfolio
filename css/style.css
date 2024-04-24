@@ -13,15 +13,37 @@ body {
   background-color: var(--background-color);
 }
 
+.navigation {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  position: fixed;
+  background-color: var(--background-color);
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
+
+.nav-link {
+  padding: 20px;
+}
+
+.active {
+  border: none;
+  text-decoration: underline var(--primary-color) 6px;
+}
+
 .underline {
   font-family: var(--primary-font);
   color: var(--secondary-color);
-  text-transform: lowercase;
-  text-decoration: underline var(--primary-color) 6px;
+  text-transform: capitalize;
   text-decoration-skip-ink: none;
   text-underline-offset: 8px;
   padding: 0;
   margin-bottom: 40px;
+  transition: all 150ms ease-in-out;
+}
+
+.underline:hover {
+  text-decoration: underline var(--primary-color) 6px;
 }
 
 h1,
@@ -51,22 +73,22 @@ h3 {
   font-weight: 400;
 }
 
-.content-section {
-  padding: 120px 20px;
+.top-section {
+  padding: 120px 0 40px 0;
 }
 
-.content-section h1 {
+.top-section h1 {
   font-size: 46px;
   font-weight: 700;
 }
 
-.content-section h2 {
+.top-section h2 {
   color: var(--secondary-color);
   font-family: var(--primary-font);
   font-size: 22px;
 }
 
-main h2 {
+.text-section h2 {
   font-size: 36px;
   font-weight: 700;
 }
@@ -88,7 +110,7 @@ main h2 {
 
 @media (max-width: 576px) {
   .hero {
-    padding: 70px;
+    padding: 120px 0 60px 0;
   }
 
   .hero h1 {
@@ -103,18 +125,8 @@ main h2 {
     font-size: 20px;
   }
 
-  .project-description {
+  .top-section,
+  .text-section {
     text-align: center;
-  }
-}
-
-@media (max-width: 768px) {
-  .content-section {
-    text-align: center;
-    padding: 40px 0;
-  }
-
-  .profile-picture {
-    max-width: 50%;
   }
 }
