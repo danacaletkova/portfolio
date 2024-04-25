@@ -113,6 +113,23 @@ h2 {
   color: var(--secondary-color);
 }
 
+.logo-links {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+.logo-links a {
+  padding: 0 15px;
+  color: var(--secondary-color);
+  text-decoration: none;
+  transition: all 150ms ease-in-out;
+}
+
+.logo-links a:hover {
+  color: var(--primary-color);
+}
+
 @media (max-width: 576px) {
   .hero h1 {
     font-size: 66px;
