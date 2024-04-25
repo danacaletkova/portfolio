@@ -104,12 +104,6 @@ h2 {
   padding: 120px 0 40px 0;
 }
 
-.profile-picture {
-  width: 75%;
-  display: block;
-  margin: 0 auto;
-}
-
 .card-title {
   font-family: var(--primary-font);
 }
