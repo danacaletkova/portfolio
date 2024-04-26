@@ -14,6 +14,7 @@ body {
 }
 
 .navigation {
+  z-index: 1;
   display: flex;
   justify-content: center;
   padding: 5px;
@@ -100,6 +101,10 @@ h2 {
   color: var(--primary-color);
 }
 
+.text-section p {
+  text-align: justify;
+}
+
 .project-image {
   filter: grayscale(100%);
   transition: all 150ms ease-in-out;
@@ -155,5 +160,9 @@ h2 {
   .top-section,
   .text-section {
     text-align: center;
+  }
+
+  .text-section p {
+    margin: 30px;
   }
 }
