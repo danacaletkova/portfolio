@@ -100,6 +100,10 @@ h3 {
   font-size: 34px;
 }
 
+#below-hero {
+  padding-top: 25px;
+}
+
 .text-section h2 {
   font-size: 36px;
   font-weight: 700;
@@ -145,7 +149,8 @@ h3 {
   transition: all 150ms ease-in-out;
 }
 
-.logo-links a:hover {
+.logo-links a:hover,
+.arrow:hover {
   color: var(--primary-color);
 }
 
