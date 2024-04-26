@@ -27,24 +27,24 @@ body {
   padding: 20px;
 }
 
-.active {
-  border: none;
-  text-decoration: underline var(--primary-color) 6px;
-}
-
-.underline {
+.link {
+  text-decoration: none;
   font-family: var(--primary-font);
   color: var(--secondary-color);
   text-transform: capitalize;
-  text-decoration-skip-ink: none;
-  text-underline-offset: 8px;
-  padding: 0;
-  margin-bottom: 40px;
+}
+
+.underline {
   transition: all 150ms ease-in-out;
+  border-bottom: 6px solid transparent;
 }
 
 .underline:hover {
-  text-decoration: underline var(--primary-color) 6px;
+  border-color: var(--primary-color);
+}
+
+.active {
+  border-bottom: 6px solid var(--primary-color);
 }
 
 h1 {
@@ -60,6 +60,11 @@ h2 {
   color: var(--secondary-color);
   font-family: var(--primary-font);
   font-size: 22px;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 700;
 }
 
 .hero {
