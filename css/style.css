@@ -1,7 +1,6 @@
 :root {
   --primary-color: #dd3b24;
   --secondary-color: #333333;
-  --secondary-color-light: #929292;
   --background-color: #f8f8f8;
   --primary-font: "DM Serif Display", serif;
   --secondary-font: "DM Sans", sans-serif;
@@ -127,10 +126,6 @@ h3 {
   padding: 120px 0 40px 0;
 }
 
-.card-title {
-  font-family: var(--primary-font);
-}
-
 .contact-link {
   text-decoration: none;
   color: var(--secondary-color);
@@ -152,6 +147,20 @@ h3 {
 .logo-links a:hover,
 .arrow:hover {
   color: var(--primary-color);
+}
+
+.card {
+  border: none;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  transition: all 150ms ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-title {
+  font-family: var(--primary-font);
 }
 
 @media (max-width: 576px) {
