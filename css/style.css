@@ -153,10 +153,17 @@ h3 {
   border: none;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   transition: all 150ms ease-in-out;
+  height: 100%;
 }
 
 .card:hover {
   transform: scale(1.05);
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .card-title {
@@ -182,6 +189,6 @@ h3 {
   }
 
   .text-section p {
-    margin: 20px;
+    margin: 0 20px;
   }
 }
