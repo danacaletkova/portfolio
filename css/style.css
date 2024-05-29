@@ -103,6 +103,10 @@ h3 {
   padding-top: 25px;
 }
 
+.top-section {
+  padding: 120px 0 40px 0;
+}
+
 .text-section h2 {
   font-size: 36px;
   font-weight: 700;
@@ -120,10 +124,6 @@ h3 {
 
 .project-image:hover {
   filter: none;
-}
-
-.top-section {
-  padding: 120px 0 40px 0;
 }
 
 .contact-link {
