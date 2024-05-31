@@ -51,38 +51,82 @@
           <h1>Let's get in touch</h1>
           <h2>I'm looking forward to hearing from you</h2>
         </div>
-        <div class="text-center text-sm-start">
-          <div class="row mb-5">
-            <h3>Email</h3>
-            <p>
-              <a
-                href="mailto:danacaletkova@proton.me"
-                class="contact-link underline"
-                >danacaletkova@proton.me</a
-              >
-            </p>
+        <div class="row pb-0 pb-md-5">
+          <div class="col-12 col-md-6 pb-4 pb-md-0">
+            <form action="https://formspree.io/f/mvoejpeb" method="post">
+              <fieldset>
+                <label for="name"
+                  ><strong>Your Name</strong> <small>(required)</small></label
+                >
+                <input
+                  class="input-field"
+                  type="text"
+                  name="name"
+                  id="name"
+                  required
+                />
+                <label for="email"
+                  ><strong>Your Email</strong> <small>(required)</small></label
+                >
+                <input
+                  class="input-field"
+                  type="email"
+                  name="contact"
+                  id="email"
+                  required
+                />
+                <label for="message"
+                  ><strong>Your Message</strong>
+                  <small>(required)</small></label
+                >
+                <textarea
+                  class="input-field"
+                  rows="3"
+                  name="message"
+                  id="message"
+                  required
+                ></textarea>
+              </fieldset>
+              <input class="btn" type="submit" value="Submit" />
+            </form>
           </div>
-          <div class="row mb-5">
-            <h3>LinkedIn</h3>
-            <p>
-              <a
-                href="https://www.linkedin.com/in/danacaletkova/"
-                target="_blank"
-                class="contact-link underline"
-                >linkedin.com/in/danacaletkova</a
-              >
-            </p>
-          </div>
-          <div class="row mb-5">
-            <h3>GitHub</h3>
-            <p>
-              <a
-                href="https://github.com/danacaletkova"
-                target="_blank"
-                class="contact-link underline"
-                >github.com/danacaletkova</a
-              >
-            </p>
+          <div class="col-12 col-md-6">
+            <div
+              class="text-center d-flex flex-column align-items-center"
+            >
+              <div class="p-4">
+                <h3>Email</h3>
+                <p>
+                  <a
+                    href="mailto:danacaletkova@proton.me"
+                    class="contact-link underline"
+                    >danacaletkova@proton.me</a
+                  >
+                </p>
+              </div>
+              <div class="p-4">
+                <h3>LinkedIn</h3>
+                <p>
+                  <a
+                    href="https://www.linkedin.com/in/danacaletkova/"
+                    target="_blank"
+                    class="contact-link underline"
+                    >linkedin.com/in/danacaletkova</a
+                  >
+                </p>
+              </div>
+              <div class="p-4">
+                <h3>GitHub</h3>
+                <p>
+                  <a
+                    href="https://github.com/danacaletkova"
+                    target="_blank"
+                    class="contact-link underline"
+                    >github.com/danacaletkova</a
+                  >
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

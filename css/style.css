@@ -170,6 +170,39 @@ h3 {
   font-family: var(--primary-font);
 }
 
+form {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+form .input-field {
+  display: block;
+  width: 100%;
+  margin: 5px 0 15px 0;
+  padding: 7px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: var(--background-color);
+}
+
+form small {
+  opacity: 0.7;
+  font-size: small;
+}
+
+form .btn {
+  border: 1px solid #ccc;
+  border-radius: 0px;
+  padding: 10px 20px;
+  font-weight: 700;
+}
+
+form .btn:hover {
+  color: var(--primary-color);
+  border: 1px solid #ddd;
+}
+
 @media (max-width: 576px) {
   .hero h1 {
     font-size: 66px;
