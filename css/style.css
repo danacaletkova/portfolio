@@ -56,8 +56,6 @@ h1 {
 h2 {
   font-family: var(--primary-font);
   color: var(--secondary-color);
-  color: var(--secondary-color);
-  font-family: var(--primary-font);
   font-size: 22px;
 }
 
@@ -205,15 +203,15 @@ form .btn:hover {
 
 @media (max-width: 576px) {
   .hero h1 {
-    font-size: 66px;
+    font-size: 56px;
   }
 
   .hero h2 {
-    font-size: 26px;
+    font-size: 24px;
   }
 
   .hero h3 {
-    size: 30px;
+    font-size: 26px;
   }
 
   .top-section,
