@@ -116,12 +116,11 @@ h3 {
 }
 
 .project-image {
-  filter: grayscale(100%);
   transition: all 150ms ease-in-out;
 }
 
 .project-image:hover {
-  filter: none;
+opacity: 0.9;
 }
 
 .contact-link {
