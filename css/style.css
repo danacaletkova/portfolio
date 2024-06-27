@@ -125,7 +125,7 @@ h3 {
 }
 
 .project-image:hover {
-opacity: 0.9;
+  opacity: 0.9;
 }
 
 .contact-link {
@@ -149,6 +149,15 @@ opacity: 0.9;
 .logo-links a:hover,
 .arrow:hover {
   color: var(--primary-color);
+}
+
+.skill {
+  padding: 10px 40px 10px 0;
+}
+
+.skill svg {
+  width: 24px;
+  stroke-width: 1.25;
 }
 
 .card {
@@ -225,5 +234,9 @@ form .btn:hover {
 
   .text-section p {
     margin: 0 20px;
+  }
+
+  .skill {
+    padding: 10px;
   }
 }
